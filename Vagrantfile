@@ -10,7 +10,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   config.vm.box = "precise32_nginx_mysql_php-fpm"
 
   # Get the custom box from the SHOWstudio CDN if it hasn't already been downloaded.
-  config.vm.box_url = "http://paulherron.com/boxes/precise32_nginx_mysql_php-fpm.box"
+  #config.vm.box_url = "http://yoursite.com/boxes/precise32_nginx_mysql_php-fpm.box"
 
   # A shell script is run to pull in CakePHP, set up the 'showstudio' nginx config, etc.
   config.vm.provision :shell, :path => "app/config/vagrant/bootstrap.sh"
